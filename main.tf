@@ -24,4 +24,6 @@ module "cluster" {
 }
 module "IAM" {
   source = "./modules/IAM"
+  IAMaccount_id   = "my-service-account"
+  IAMdisplay_name = "A service account that only Jane can interact with"
 }
